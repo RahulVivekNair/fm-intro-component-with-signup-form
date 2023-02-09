@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <title>Frontend Mentor | Intro component with sign up form</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <title>Frontend Mentor | NFT preview card component</title>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            red: 'hsl(0, 100%, 74%)',
+            greeny: 'hsl(154, 59%, 51%)',
+            blue: 'hsl(248, 32%, 49%)',
+            darkBlue: 'hsl(249, 10%, 26%)',
+            greyBlue: 'hsl(246, 25%, 77%)',
+
+          },
+          fontFamily: {
+            'poppins': ['Poppins'],
+          },
+          backgroundImage: {
+            bagdesktop: "url('./images/bg-intro-desktop.png')",
+            bagmobile: "url('./images/bg-intro-mobile.png')",
+          }
+        }
+      }
+    }
+  </script>
+</head>
+
+<body class="bg-red bg-bagmobile sm:bg-bagdesktop bg-no-repeat bg-center">
+  <div class="flex justify-center min-h-screen font-poppins">
+    <div class="flex flex-col mx-6">
+      <div class="text-white ">
+        <h2 class="font-bold text-2xl lg:text-5xl">Learn to code by watching others</h2>
+        <p class="font-medium text-base">See how experienced developers solve problems in real-time. Watching scripted
+          tutorials
+          is great,
+          but understanding how developers think is invaluable.</p>
+      </div>
+      <div class="">
+        <div class="bg-blue text-center text-white text-base py-5 rounded-lg"><span class="font-bold">Try it free 7
+            days</span> then $20/mo. thereafter
+        </div>
+        <form action="" class="bg-white rounded-lg flex flex-col p-4">
+          <input type="text" placeholder="First Name"
+            class="placeholder:font-semibold placeholder:text-sm placeholder:text-darkBlue border border-opacity-50 rounded-md py-3 border-greyBlue focus:border-darkBlue focus:border-2 focus:border-opacity-50 outline-none px-3">
+          <button class="bg-greeny text-white py-3 rounded-md hover:bg-greeny/60 uppercase">Claim your free
+            trial</button>
+          <span>By clicking the button, you are agreeing to our <span class="text-red">Terms and Services</span></span>
+        </form>
+
+      </div>
+    </div>
+  </div>
+
+  First Name
+  Last Name
+  Email Address
+  Password
+
+
+</body>
+
+</html>
